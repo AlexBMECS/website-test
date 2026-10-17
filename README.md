@@ -15,13 +15,6 @@
 | `assets/config.js` | Public contact email |
 | `assets/favicon.svg` | Initial VitalCue brand mark |
 
-## Custom domain (optional)
-
-First launch on the default GitHub Pages address. Later configure your domain in **Settings → Pages → Custom domain** and follow GitHub's DNS instructions. No invented domain or CNAME is included.
-
-## What this package does not do
-
-This is a public informational site. It does not ingest wearable data, generate medical predictions, enroll patients, authenticate users, or provide a working clinician dashboard. Those functions require a separate application and appropriate study infrastructure.
 
 ## Hosting and privacy
 
