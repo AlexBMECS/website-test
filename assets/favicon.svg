@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#006d73"/><path d="M8 12l10 18h4l10-18h-7l-5 10-5-10z" fill="#d8f478"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#EFF4FB"/>
+      <stop offset="38%"  stop-color="#DDE8F5"/>
+      <stop offset="78%"  stop-color="#C7D7EA"/>
+      <stop offset="100%" stop-color="#B6C7DD"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="50%" cy="30%" r="70%">
+      <stop offset="0%"  stop-color="#FFF7E6" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#FFF7E6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FFF8EC"/>
+      <stop offset="38%"  stop-color="#F1F2F2"/>
+      <stop offset="72%"  stop-color="#C7D7EA"/>
+      <stop offset="100%" stop-color="#B6C7DD"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="48%" r="42%">
+      <stop offset="0%"   stop-color="#FFFDF6"/>
+      <stop offset="60%"  stop-color="#FFF4DE" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#F1E3CC" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="rounded">
+      <rect x="0" y="0" width="1024" height="1024" rx="225" ry="225"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <rect x="0" y="0" width="1024" height="1024" fill="url(#dawn)"/>
+    <rect x="0" y="0" width="1024" height="1024" fill="url(#warm)"/>
+    <!-- Orb at 56% of canvas: diameter 573, radius 286.5, centered (512, 512). -->
+    <circle cx="512" cy="512" r="286.5" fill="url(#halo)"/>
+    <!-- Inner core, slightly above center to match the 0/48% offset on the source glyph. -->
+    <circle cx="512" cy="503" r="137" fill="url(#core)"/>
+  </g>
+</svg>
